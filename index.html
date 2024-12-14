@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Flappy Bird</title>
+        <link rel="stylesheet" href="flappybird.css">
+        <script src="flappybird.js"></script>
+    </head>
+    <body>
+        <div id="startPage">
+             <h1>Welcome to Flappy Bird</h1>
+             <button id="chooseBirdBtn">Choose Bird</button>
+             <button id="gameRuleBtn">Game Rule</button>
+        </div>
+
+        <div id="chooseBirdPage" style="display: none;">
+            <button id="backBtn" class="back-btn">Back</button>
+            <h2>Choose Your Bird</h2>
+            <div id="birdOptions">
+                <div class="birdOption" data-bird="bird1">
+                    <img src="./bird1.png" alt="Bird 1" class="birdImg" />
+                    <p class="birdName">Bird 1</p>
+                </div>
+                <div class="birdOption" data-bird="bird2">
+                    <img src="./bird2.png" alt="Bird 2" class="birdImg" />
+                    <p class="birdName">Bird 2</p>
+                </div>
+                <div class="birdOption" data-bird="bird3">
+                    <img src="./bird3.png" alt="Bird 3" class="birdImg" />
+                    <p class="birdName">Bird 3</p>
+                </div>
+                <div class="birdOption" data-bird="bird4">
+                    <img src="./bird4.png" alt="Bird 4" class="birdImg" />
+                    <p class="birdName">Bird 4</p>
+                </div>
+                <div class="birdOption" data-bird="bird5">
+                    <img src="./bird5.png" alt="Bird 5" class="birdImg" />
+                    <p class="birdName">Bird 5</p>
+                </div>
+            </div>
+            <button id="startGameBtn" onclick="startGameWithBird()">Start Game</button>
+            <h3>Press 'PgUp', 'Space', 'keyX' to jump right after pressing start</h3>
+        </div>
+        
+        <div id="gameRulePage" style="display: none;">
+            <button id="backRuleBtn" class="back-btn">Back</button>
+            <h4>Game Rules</h4>
+            <p>-Press the "PgUp", "Space" or "keyX" to jump and avoid obstacles or fall down.</p>
+            <p>-In the "Game Over" screen, function press "C" to change the bird is still</p>
+            <p>under development so please reload the page to change the bird.</p>
+            <p>-Press the "R" to restart.</p>
+        </div>
+    
+
+    <div id="gamePage">
+        <canvas id="board"></canvas>
+    </div>
+    </body>
+</html>

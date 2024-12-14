@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#board {
+    background-image: url("./bg6.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#startPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("./bg7.png"); /* Background for start page */
+    background-size: cover;
+    background-position: center;
+    height: 90%; /* Occupy 90% of screen height */
+    width: 90%; /* Occupy 90% of screen width */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #000000;
+    border-radius: 15px;
+}
+
+#startPage h1 {
+    font-style: italic;
+    color: #f2da00;
+    font-size: 72px;
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 0 10px;
+}
+
+/* Game Page */
+#gamePage {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#chooseBirdBtn {
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color: #ff9204;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-bottom: 40px;
+    width: 200px;
+}
+
+#chooseBirdBtn:hover {
+    background-color: #ffd862;
+}
+
+#chooseBirdPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("./bg8.png"); /* Background for start page */
+    background-size: cover;
+    background-position: center;
+    height: 90%; /* Occupy 90% of screen height */
+    width: 90%; /* Occupy 90% of screen width */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #000000;
+    border-radius: 15px;
+}
+#chooseBirdPage h2 {
+    color: #000000;
+    font-size: 30px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+#birdOptions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.birdOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Bird Image Style */
+.birdImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect for bird images */
+.birdOption:hover .birdImg {
+    transform: scale(1.1); /* Zoom-in effect on hover */
+}
+
+/* Style for selected bird */
+.birdOption.selected {
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.8); /* Golden shadow to highlight selected bird */
+    transform: scale(1.1); /* Slight zoom for the selected bird */
+    border-radius: 15px;
+    
+}
+
+
+/* Start game button */
+#startGameBtn {
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#startGameBtn:hover {
+    background-color: #45a049;
+}
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: rgba(5, 48, 13, 0.688); 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: rgba(5, 48, 13, 0.551); 
+}
+.birdName {
+    font-weight: bold; /* Làm chữ đậm */
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive; /* Chọn font chữ */
+    font-style: italic;
+}
+#chooseBirdPage h3 {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.123);
+    font-style: italic;
+    padding: 10px;
+    background-color: rgba(5, 48, 13, 0.154); 
+    
+}
+#gameRulePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("./bg8.png"); /* Background for start page */
+    background-size: cover;
+    background-position: center;
+    height: 90%; /* Occupy 90% of screen height */
+    width: 90%; /* Occupy 90% of screen width */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #000000;
+    border-radius: 15px;
+}
+#gameRulePage h4 {
+    color: #000000;
+    font-size: 50px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-family: 'Dancing Script', cursive;
+}
+#gameRulePage p {
+    margin: 10px 0; /* Khoảng cách giữa các đoạn văn bản */
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive; /* Chọn font chữ */
+    padding: 0 20px; /* Khoảng cách 20px ở hai bên */
+    text-align: left; /* Căn lề trái */
+    word-wrap: break-word; /* Ngắt từ khi gặp phải dòng quá dài */
+    white-space: normal; /* Cho phép ngắt dòng tự động */
+    max-width: 90%; /* Giới hạn chiều rộng của đoạn văn */
+}
+
+
+
+
+#gameRuleBtn {
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color: #ff9204;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    width: 200px;
+}
+
+#gameRuleBtn:hover {
+    background-color: #ffd862;
+}
+
