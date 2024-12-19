@@ -38,4 +38,4 @@ Start the server:
 http-server
 
 Open the browser and go to http://localhost:8080 (or the address displayed in the terminal).
->>>>>>> f521575b3b2ced42f5c6b98cfcbe2dad431a0188
+
